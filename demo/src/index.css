@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+/* ── Custom font tokens ──────────────────────────────────────────────────── */
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Lora', 'Georgia', serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+
+  color-scheme: dark;
+}
+
+/* ── Base reset ──────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: #07070f;
+  color: #e2e8f0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Custom scrollbar ────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.35);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.6);
+}
+
+/* ── Range input accent ──────────────────────────────────────────────────── */
+input[type='range'] {
+  accent-color: #8b5cf6;
+}
+
+/* ── Color input (hidden native, visible swatch overlay) ─────────────────── */
+input[type='color'] {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* ── Code block ──────────────────────────────────────────────────────────── */
+.code-block {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  line-height: 1.7;
+  tab-size: 2;
+}
+
+/* ── Glass card utility ──────────────────────────────────────────────────── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ── Dot grid background for preview area ────────────────────────────────── */
+.dot-grid {
+  background-image: radial-gradient(
+    circle,
+    rgba(139, 92, 246, 0.12) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
+}
+
+/* ── Pulse animation for "live" badge ───────────────────────────────────── */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.75); }
+}
+.pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* ── Copy success flash ─────────────────────────────────────────────────── */
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-in-up {
+  animation: fade-in-up 0.18s ease-out forwards;
+}

@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+demo/node_modules/
+
+# Build outputs
+dist/
+demo/dist/
+
+# TypeScript cache
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# Vite
+demo/.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
