@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: '/doodle-callout/',
   resolve: {
     alias: {
       // Resolve 'doodle-callout' imports directly to the library source.

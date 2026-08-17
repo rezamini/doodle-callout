@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useId } from 'react';
+import { useState, useCallback, useId } from 'react';
 import { DoodleCallout } from 'doodle-callout';
 import type { ArrowDirection } from 'doodle-callout';
 
@@ -305,7 +305,7 @@ export default function App() {
               npm
             </a>
             <a
-              href="https://github.com/your-username/doodle-callout"
+              href="https://github.com/rezamini/doodle-callout"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs text-slate-400 hover:text-white transition-colors flex items-center gap-1.5"
@@ -325,8 +325,8 @@ export default function App() {
         <div className="flex flex-wrap justify-center items-center gap-2 mb-7">
           {([
             { label: 'Zero Dependencies', accent: '#22c55e' },
-            { label: 'TypeScript',        accent: '#3b82f6' },
-            { label: 'ESM + CJS',         accent: '#f59e0b' },
+            { label: 'TypeScript', accent: '#3b82f6' },
+            { label: 'ESM + CJS', accent: '#f59e0b' },
           ] as const).map(badge => (
             <span
               key={badge.label}
@@ -718,7 +718,7 @@ export default function App() {
       >
         MIT License ·{' '}
         <a
-          href="https://github.com/your-username/doodle-callout"
+          href="https://github.com/rezamini/doodle-callout"
           className="hover:text-slate-400 transition-colors"
           target="_blank"
           rel="noopener noreferrer"
