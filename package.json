@@ -16,13 +16,13 @@
   ],
   "author": "",
   "license": "MIT",
-  "homepage": "https://github.com/your-username/doodle-callout#readme",
+  "homepage": "https://github.com/rezamini/doodle-callout#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/doodle-callout.git"
+    "url": "git+https://github.com/rezamini/doodle-callout.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/doodle-callout/issues"
+    "url": "https://github.com/rezamini/doodle-callout/issues"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

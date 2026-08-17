@@ -12,7 +12,7 @@ Perfect for SaaS landing pages, drawing attention to CTAs, and adding an organic
 [![license](https://img.shields.io/npm/l/doodle-callout.svg?style=flat-square&color=22c55e)](./LICENSE)
 [![React](https://img.shields.io/badge/React-17%2B-61dafb?style=flat-square&logo=react&logoColor=white)](https://react.dev)
 
-**[Live Demo →](https://your-username.github.io/doodle-callout)**
+**[Live Demo →](https://rezamini.github.io/doodle-callout)**
 
 </div>
 
