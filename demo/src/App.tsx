@@ -49,8 +49,8 @@ function generateCode(cfg: CodeConfig): string {
 
   const styleEntries: string[] = [];
   if (cfg.fontSize !== DEFAULT_FONT_SIZE) styleEntries.push(`fontSize: '${cfg.fontSize}px'`);
-  if (cfg.fontPreset !== 'serif') styleEntries.push(`fontFamily: '${FONT_PRESETS[cfg.fontPreset]}'`);
-  if (cfg.fontStyle !== DEFAULT_FONT_STYLE) styleEntries.push(`fontStyle: '${cfg.fontStyle}'`);
+  if (cfg.fontPreset !== 'serif') styleEntries.push(`fontFamily: "${FONT_PRESETS[cfg.fontPreset]}"`);
+  styleEntries.push(`fontStyle: '${cfg.fontStyle}'`);
   if (styleEntries.length > 0) props.push(`style={{ ${styleEntries.join(', ')} }}`);
 
   const indent = '  ';
@@ -289,7 +289,7 @@ export default function App() {
             </div>
             <div className="flex items-baseline gap-2">
               <span className="font-semibold text-sm text-white">doodle-callout</span>
-              <span className="text-xs font-mono" style={{ color: 'rgba(139,92,246,0.7)' }}>v0.1.0</span>
+              <span className="text-xs font-mono" style={{ color: 'rgba(139,92,246,0.7)' }}>v0.1.1</span>
             </div>
           </div>
           <nav className="flex items-center gap-5">

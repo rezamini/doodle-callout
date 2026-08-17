@@ -1,6 +1,6 @@
 {
   "name": "doodle-callout",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A lightweight, zero-dependency React component that renders text with a sketchy SVG underline and a hand-drawn directional arrow.",
   "keywords": [
     "react",
